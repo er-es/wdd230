@@ -1,0 +1,93 @@
+body {
+  font-size: 16pt;  
+  font-family: 'Noto Sans', sans-serif;
+    
+}
+header, main, footer {
+    max-width: 760px;
+    margin: 0 auto;
+    line-height: 2rem;
+}
+
+header {
+    background-color:#56669D;
+    padding: 1.5rem;
+    text-align:center;
+    border-radius: 10px;
+    
+}
+
+header img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    }
+
+h1 {
+    font-size: 2.4rem;
+    color: #FCF7F4;
+        
+    }
+
+h2 {
+    font-size: 2.4rem;
+    color: #56669D;
+    margin-left: 0.5rem;
+}
+
+main ul {
+    margin-left: 1rem;
+    list-style: none;
+    
+}
+
+main ul li{ 
+    margin: 0.5rem;
+}
+
+main ul li::before {
+    content: '🐾'
+}
+footer {
+    height: 55px;
+    padding: 1.5rem;
+    background-color: #56669D;
+    color: #FCF7F4;
+    text-align: center;
+    border-radius: 10px;
+    margin: 0 auto;
+
+}
+footer a {
+    color: #FCF7F4;
+  }
+
+footer a:hover,
+footer a:focus{
+    color: #FCF7F4;
+}
+
+
+
+
+
+/* Color Theme Swatches in Hex */
+.HALA-KOSZYKI-1-hex { color: #1A3540; }
+.HALA-KOSZYKI-2-hex { color: #3B5959; }
+.HALA-KOSZYKI-3-hex { color: #708C87; }
+.HALA-KOSZYKI-4-hex { color: #BDBFAE; }
+.HALA-KOSZYKI-5-hex { color: #D9D7C5; }
+
+/* Color Theme Swatches in RGBA */
+.HALA-KOSZYKI-1-rgba { color: rgba(26, 53, 63, 1); }
+.HALA-KOSZYKI-2-rgba { color: rgba(58, 89, 89, 1); }
+.HALA-KOSZYKI-3-rgba { color: rgba(112, 140, 135, 1); }
+.HALA-KOSZYKI-4-rgba { color: rgba(189, 191, 174, 1); }
+.HALA-KOSZYKI-5-rgba { color: rgba(216, 215, 197, 1); }
+
+/* Color Theme Swatches in HSLA */
+.HALA-KOSZYKI-1-hsla { color: hsla(196, 41, 17, 1); }
+.HALA-KOSZYKI-2-hsla { color: hsla(180, 20, 29, 1); }
+.HALA-KOSZYKI-3-hsla { color: hsla(168, 11, 49, 1); }
+.HALA-KOSZYKI-4-hsla { color: hsla(67, 11, 71, 1); }
+.HALA-KOSZYKI-5-hsla { color: hsla(56, 20, 81, 1); }

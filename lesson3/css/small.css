@@ -1,0 +1,167 @@
+:root {
+    /* change the values below to your colors from your palette */
+    --primary-color: #4F6F8C;
+    --secondary-color: #BDD4F2;
+    --accent1-color: #401D36;
+    --accent2-color: #1D2C40;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0 auto;
+    background-color:#BDD4F2;
+    padding: 1em;
+}
+
+header,
+footer {
+    background-color: #4F6F8C;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    }
+
+header,
+nav,
+main,
+footer {
+    max-width:767px;
+    margin: 0 auto;
+}
+
+header img {
+    max-width: 40%;
+    padding: 10px;
+}
+
+.logo-box {
+    margin-left:30px; 
+    margin-top: 30px;
+    }
+
+h1 {
+	font-size: 2.5rem;
+    color: #BDD4F2
+}
+h2 {
+    font-size: 2rem;
+	color: #536878;
+}
+
+h3 {
+    font-size: 1.5rem;
+    font-family: 'Ubuntu', sans-serif;
+    color:#536878;
+}
+p {
+    font-size: 1.5rem;
+    font-family: 'Oxygen', sans-serif;
+    color:#401D36;
+}
+.colors {
+    width: 100%;
+    min-width: 350px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .colors th {
+    background-color: #999;
+  }
+  .colors td{
+    width: 25%;
+    height: 3em;
+  }
+  
+  .primary {
+    background-color: var(--primary-color);
+  }
+  .secondary {
+    background-color: var(--secondary-color);
+  }
+  .accent1 {
+    background-color: var(--accent1-color);
+  }
+  .accent2{
+    background-color: var(--accent2-color);
+  }
+
+nav {
+	text-align: center;
+    border-radius: 10px;
+	box-shadow: 0 2px 15px gray;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #4F6F8C;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	overflow: hidden;
+}
+
+nav ul li a {
+	display: block;
+	color: #1D2C40;
+	text-align: center;
+    margin-left: 20px;
+	padding: 1rem;
+	text-decoration: none;
+	font-size: 1.5rem;
+    font-weight: bold;
+	background: linear-gradient(90deg, transparent, #401D36, transparent) top / var(--d, 0) 10px no-repeat;
+    transition: 0.5s;
+}
+nav a:hover {
+/* 	background-color: #bbb;
+	color: #36454f; */
+	--d: 75%;
+}
+.active {
+	color: #1D2C40;
+}
+main {
+	display: grid;
+    padding: 0 1rem;
+	grid-template-columns: 1fr;
+	font-size: 1rem;
+    color: whitesmoke;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+footer {
+    display:block;
+	height: 1.5rem;
+    padding: 1rem;
+    text-align: center;
+    border-radius: 10px;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-family: 'Ubuntu', sans-serif;
+    color: #BDD4F2
+
+}
+
+footer a {
+    color: #FCF7F4;
+  }
+
+footer a:hover,
+footer a:focus{
+    color: #FCF7F4;
+}
+
+selector{
+    color:#FCF7F4;
+}
+

@@ -1,5 +1,4 @@
 :root {
-    /* change the values below to your colors from your palette */
     --primary-color: #4F6F8C;
     --secondary-color: #BDD4F2;
     --accent1-color: #401D36;
@@ -35,9 +34,8 @@ footer {
 }
 
 header img {
-    max-width: 40%;
-    padding: 10px;
-}
+    max-width: 200px;
+    }
 
 .logo-box {
     margin-left:30px; 
@@ -63,16 +61,27 @@ p {
     font-family: 'Oxygen', sans-serif;
     color:#401D36;
 }
+
+table {
+    display: table;
+    border-collapse: separate;
+    box-sizing: border-box;
+    text-indent: initial;
+    border-spacing: 2px;
+    border-color: grey
+}
+
 .colors {
     width: 100%;
     min-width: 350px;
     margin: auto;
     text-align: center;
   }
-  
+
   .colors th {
     background-color: #999;
-  }
+      }
+
   .colors td{
     width: 25%;
     height: 3em;

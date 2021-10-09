@@ -1,9 +1,17 @@
+const copyrightyear = document.getElementById("copyrightyear");
+copyrightyear.textContent = new Date().getFullYear();
 
 
 
-const options1= { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
-const date1= new Date(2012, 5);
+const datefield = document.querySelector("date");
 
-const dateTimeFormat= new Intl.DateTimeFormat('en-UK', options1);
-console.log(dateTimeFormat.format(date1));
-   
+const now = new Date();
+const fulldate = new Intl.DateTimeFormat("en-UK", { dateStyle: "full" }).format(now);
+
+datefield.innerHTML = `${fulldate}`;
+	
+	
+
+
+
+

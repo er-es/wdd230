@@ -90,7 +90,7 @@ nav ul li a {
 }
 
 .navigation li:first-child {
-	display: inline-block;
+	display: flex;
     color: #BDD4F2;
     font-size: 1.5rem;
     align-items: center;

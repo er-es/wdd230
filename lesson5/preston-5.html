@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLD FUN | Preston</title>
+    <meta name="description" content="Weather Site Project: The purpose of this assignment is to organize a Weather Site term project by employing the web site planning document fundamentals of purpose, objective, design, responsive design, target audience identification, and content. Web Frontend Development at Brigham Young University - Idaho">
+   
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    <script defer src="js/getDates.js"></script>
+    <script defer src="js/hambmenu.js"></script>
+</head>
+<body>
+
+    <header>
+    <picture>
+            <img src="images/coldfun_headerimg.png" alt="Cold Fun Logo">
+        </picture>
+        <section class="headings">
+            <h1>COLD FUN</h1>
+            <q class="m">Winter time, fun time!</q>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="navigation responsive">
+            <li><a href="#" onclick="toggleMenu()">&#9779;</a>Menu</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class="herodiv">
+            <div class="hero-ph">
+                <img src="images/hero_image.png" alt="Preston Lake">
+            </div>
+            <section class="weathersummary">
+                <h3>Weather Summary</h3>
+                <p>Currently: Partly Cloudy</p>
+                <p>High: 48°F</p>
+                <p>Wind Chill: °F</p>
+                <p>Humidity: 51%</p>
+                <p>Wind Speed: 9 mph</p>
+                
+            </section>
+        </div>
+
+        <h2>5 Day Forecast</h2>
+<div class="flex">
+	<div class="flex-col">
+		<span class="col-head">Wed</span>
+		<img src="images/rainy_forecast.png" alt="Rainy Forecast">
+		<span class="data">43° F</span>
+	</div>
+	<div class="flex-col">
+		<span class="col-head">Thu</span>
+		<img src="images/rainy_forecast.png" alt="Rainy Forecast">
+		<span class="data">54° F</span>
+	</div>
+	<div class="flex-col">
+		<span class="col-head">Fri</span>
+		<img src="images/rainy_forecast.png" alt="Rainy Forecast">
+		<span class="data">47° F</span>
+	</div>
+	<div class="flex-col">
+		<span class="col-head">Sat</span>
+		<img src="images/rainy_forecast.png" alt="Rainy Forecast">
+		<span class="data">49° F </span>
+	</div>
+	<div class="flex-col">
+		<span class="col-head">Sun</span>
+		<img src="images/rainy_forecast.png" alt="Rainy Forecast">
+		<span class="data">53° F</span>
+	</div>
+	
+	</div>
+</div>
+        
+    <div class="article">
+        <h2>Use layers to stay warm</h2>
+
+        <img src="images/clothes-mini.jpg" alt="Dress in Layers">
+        <p>The layer principle of dressing should be used in cold weather, this doesn't mean simply lots of layers, but layers for particular purposes, a close fitting base layer to wick away sweat, especially if there is any physical exertion taking place, insulating mid layers and a looser fitting wind or waterproof outer layer. Insulation can be provided by a number of thinner layers rather than a single thick layer. This is a more effective way of staying warm as air (the real insulator) is trapped between as well as within the layers. </p>
+        
+
+    </div>
+       
+    <div class="contact">
+        <h2>Contact Information</h2>
+      
+        <h3>Directions:</h3>
+
+        <div class= "map">
+        <a href= "https://goo.gl/maps/ZUFoc6vjmpWWp4uC7 "> <img src="images/preston_map.png" alt="Preston Map"></a>
+    </div>
+
+        <p>✉️ coldfun.info@gmail.com <br>
+        ☎️ 999-999-999 </p>
+
+        <section class="social">
+            <a href="https://www.facebook.com"> <img src="images/facebook.png" alt="Facebook" width="50"></a>
+            <a href="https://www.instagram.com"><img src="images/instagram.png" alt="Instagram" width="50"></a>
+            <a href="https://www.twitter.com"><img src="images/twitter.png" alt="YouTube" width="50"></a>
+        </section>
+        
+        </div>  
+
+
+    </div>
+    </main>
+   
+    <footer>
+       | &copy; <span id="copyrightyear"></span>
+       | Avril Escalante | México | <br> 
+    </footer>
+
+    <date></date> |
+     
+</body>
+</html>

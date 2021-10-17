@@ -1,0 +1,299 @@
+body {
+    background-color:#BDD4F2;
+	padding: 0;
+	margin: 0;
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0 auto;
+    
+    
+}
+
+header,
+footer{
+    background-color: #4F6F8C;
+   	display: flex;
+    padding:1rem;
+	align-items:center;
+	justify-content:center;
+    
+}
+
+
+header img {
+	width: 200px;
+	height: auto;
+}
+
+.headings {
+	display: flex;
+	flex-direction: column;
+}
+
+.headings h1 {
+	font-size: 2.5rem;
+	margin: 0 0 0 17px;
+    color: #BDD4F2
+}
+
+.m {
+	font-style: italic;
+    letter-spacing: 1pt;
+	padding: 10px;
+	color: whitesmoke;
+	margin-left: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+	color: #536878;
+    text-align: center;
+}
+
+
+.hero-ph { 
+	margin: 0 auto;
+	box-shadow: 0 0 30px #777;
+	max-width: 100%;
+	
+}
+
+
+	.hero-ph img {
+		display: flex;
+		margin: 0 auto;
+		max-width: 100%;
+	}
+
+.herodiv {
+	position: relative;
+	margin: 0 auto;
+	max-width: 960px;
+	height: 300px;
+	
+}
+
+.weathersummary {
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	background-color: #4F6F8C;
+	padding: .5rem;
+	box-shadow: 0 0 30px #777;
+	opacity: .8;
+}
+
+h3 {
+	font-size: 1.2rem;
+	text-decoration-line: underline;
+}
+
+p {
+	font-size: .9rem;
+	line-height: .5rem;
+}
+
+.flex {
+	display: flex;
+	/* flex-direction: row; */
+	/* let us combine row and wrap with flow */
+	flex-flow: row wrap;
+	}
+
+.flex-col {
+	flex: 1 1 auto;
+	background-color: whitesmoke;
+	border: 3px solid #401D36;
+	text-align: center;
+	margin: 5px auto;
+}
+
+.flex-col:hover, td:hover {
+	opacity: 0.9;
+	background-color: #BDD4F2;
+	color: white;
+}
+
+.col-head {
+	display: block;
+	padding: 0 5px 5px;
+	background-color: #BDD4F2;
+	font-size: 1.5rem;
+	text-align: center;
+	color: #4F6F8C;
+	
+}
+
+.data {
+	display: block;
+	padding: 0 5px 5px;
+	font-size: 0.8rem;
+	text-align: center;
+	color: #4F6F8C;
+	font-size: 1.5rem;
+}
+
+nav {
+    display: flex;
+    margin: 0 auto;
+	max-width: 760px;
+    text-align: center;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #401D36;
+    
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	overflow: hidden;
+}
+
+nav ul li a {
+	display: block;
+	color:  #BDD4F2;
+	text-align: center;
+    padding: 1rem;
+	text-decoration: none;
+	font-size: 1.5rem;
+}
+
+
+.active {
+	color: whitesmoke;
+}
+
+.responsive li {
+	display: block;
+}
+
+.navigation {
+	list-style: none;
+	padding: 0;
+    
+}
+
+.navigation li:first-child {
+	display: flex;
+    color: #BDD4F2;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.navigation li {
+	display: none;
+}
+
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	
+}
+.navigation a:hover {
+	color: white;
+}
+
+
+
+main {
+	display: block;
+    padding: 0 1rem;
+	font-size: 1rem;
+    color: whitesmoke;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+.article {
+	display: block;
+	position: relative;
+	background-color: whitesmoke;
+	padding: 10px;
+	margin: 1rem auto;
+	box-shadow: 0 0 30px #777;
+}
+
+.article p {
+	text-align:justify;
+	font-size: 1em;
+	color: #536878;
+	max-width: 500px;
+	margin: 1rem;
+	line-height: 1.5;
+}
+
+.article img {
+	/*max-width: 350px;
+	align-items: center;
+    justify-content: center;
+	padding: 10px;*/
+	float:right;
+	box-shadow: 0 0 10px #777;
+	padding: .25rem;
+    margin: .5rem .25rem .5rem 1.25rem;
+}
+
+.contentbox{
+    background-color: #4F6F8C;
+    padding: 15px;
+    font-size: 1rem;
+    color: #BDD4F2
+}
+
+footer {
+    height: 1.5rem;;
+    font-size: 1rem;
+	color: whitesmoke;
+    padding: 1rem;
+}
+
+date {
+	display: flex;
+	padding: 10px;
+	align-items: center;
+    justify-content: center;
+	color:#536878;
+}
+
+.contact{
+	display: flex;
+	background-color: whitesmoke;
+	margin: 0 auto;
+	box-shadow: 0 0 30px #777;
+ }
+
+ .contact h3 {
+	
+	font-size: 1.5rem;
+	color: #536878;
+	align-items: center;
+    justify-content: center;
+	line-height: 1.8rem;
+	margin: 10px;
+	}
+
+ .map { 
+	display:flex;
+	max-width: 50vh;
+	
+}
+
+.contact p{
+	
+	font-size: 1.5rem;
+	color: #536878;
+	line-height: 1.8rem;
+	margin: 0px auto;
+} 
+
+.social{
+	
+		
+}
+

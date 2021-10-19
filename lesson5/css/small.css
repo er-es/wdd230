@@ -9,6 +9,15 @@ body {
     
 }
 
+aside {
+	margin-left:50px;	
+	color:#401D36;
+	font-size: 1rem;
+	font-style: italic;
+	align-items:center;
+	justify-content:center;
+}
+
 header,
 footer{
     background-color: #4F6F8C;
@@ -162,7 +171,7 @@ nav ul li a {
 
 
 .active {
-	color: whitesmoke;
+	color: rgb(196, 189, 96);
 }
 
 .responsive li {
@@ -196,7 +205,7 @@ nav ul li a {
 	
 }
 .navigation a:hover {
-	color: white;
+	color: rgb(196, 189, 96);
 }
 
 

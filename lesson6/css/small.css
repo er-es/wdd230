@@ -1,0 +1,314 @@
+
+body {
+	max-width: 100%;
+    background-color:#BDD4F2;
+	padding: 0;
+	margin: 0;
+    font-size: 18px;
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0 auto;
+    
+    
+}
+
+aside{
+	display: none;
+}
+
+header,
+footer{
+	max-width: 100%;
+	background-color: #4F6F8C;
+   	display: flex;
+    padding: 1rem;
+	align-items:center;
+	justify-content:center;
+    
+}
+
+
+header img {
+	width: 100%;
+	height: 0 auto;
+}
+
+.headings {
+	display: flex;
+	flex-direction: column;
+}
+
+.headings h1 {
+	font-size: 2.5rem;
+	margin: 0 0 0 17px;
+    color: rgb(202, 231, 250);
+}
+
+.m {
+	font-style: italic;
+    letter-spacing: 1pt;
+	color: rgb(202, 231, 250);
+	margin-left: 20px;
+}
+
+h2 {
+    font-size: 2rem;
+	color: #536878;
+    text-align: center;
+}
+
+
+.hero-ph { 
+	margin: 0 auto;
+	box-shadow: 0 0 30px #777;
+	max-width: 100%;
+	
+}
+
+
+.hero-ph img {
+		display: flex;
+		margin: 0 auto;
+		max-width: 100%;
+	}
+
+.herodiv {
+	position: relative;
+	margin: 0 auto;
+	max-width: 960px;
+	height: 300px;
+	
+}
+
+.weathersummary {
+	position: absolute;
+	display: grid;
+	grid-gap: 5px;
+	grid-template-columns: 1fr 1fr;
+	top: 50px;
+	left: 50px;
+	background-color: #4F6F8C;
+	box-shadow: 0 0 30px #777;
+	opacity: .8;
+}
+
+.weathersummary h3 {
+	grid-column: span 2;
+	text-align: center;
+	justify-content: center;
+}
+
+h3 {
+	font-size: 1.5rem;
+	text-decoration-line: underline;
+}
+
+h4 {
+	color: #536878;
+	font-size: 1.2rem;
+	font-style: italic;
+	margin: 20px;
+
+
+}
+
+p {
+	font-size: .9rem;
+	line-height: .5rem;
+}
+
+.flex {
+	display: flex;
+	flex-flow: row wrap;
+	}
+
+.flex-col {
+	flex: 1 1 auto;
+	background-color: whitesmoke;
+	border: 3px solid #401D36;
+	text-align: center;
+	margin: 5px auto;
+}
+
+.flex-col:hover, td:hover {
+	opacity: 0.9;
+	background-color: #BDD4F2;
+	color: white;
+}
+
+.col-head {
+	display: block;
+	padding: 0 5px 5px;
+	background-color: #BDD4F2;
+	font-size: 1.5rem;
+	text-align: center;
+	color: #4F6F8C;
+	
+}
+
+.data {
+	display: block;
+	grid-template-columns: 1fr 1fr;
+	padding: 0 5px 5px;
+	font-size: 1.5rem;
+	color: #4F6F8C;
+}
+
+.currently, temperature,
+windchill, humidity, windspeed {
+	grid-column: 2;
+}
+
+nav {
+    display: flex;
+    margin: 0 auto;
+	max-width: 100%;
+    text-align: center;
+    padding: 1rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #401D36;
+    
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	overflow: hidden;
+}
+
+nav ul li a {
+	display: block;
+	color:  #BDD4F2;
+	text-align: center;
+    padding: 1rem;
+	text-decoration: none;
+	font-size: 1.5rem;
+}
+
+
+.active {
+	color: rgb(196, 189, 96);
+}
+
+.responsive li {
+	display: block;
+}
+
+.navigation {
+	list-style: none;
+	padding: 0;
+    
+}
+
+.navigation li:first-child {
+	display: flex;
+    color: #BDD4F2;
+    font-size: 1.5rem;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.navigation li {
+	display: none;
+}
+
+.navigation a {
+	display: block;
+	padding: 0.75rem;
+	text-align: left;
+	text-decoration: none;
+	
+}
+.navigation a:hover {
+	color: rgb(196, 189, 96);
+}
+
+
+
+main {
+	display: block;
+    padding: 0 1rem;
+	font-size: 1rem;
+    color: whitesmoke;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+.article {
+	display: block;
+	position: relative;
+	background-color: whitesmoke;
+	padding: 10px;
+	margin: 1rem auto;
+	box-shadow: 0 0 30px #777;
+}
+
+.article p {
+	text-align:justify;
+	font-size: 1em;
+	color: #536878;
+	margin: 1rem;
+	line-height: 1.5;
+}
+
+.article img {
+	float:right;
+	box-shadow: 0 0 10px #777;
+	padding: .25rem;
+    margin: .5rem .25rem .5rem 1.25rem;
+}
+
+.contentbox{
+    background-color: #4F6F8C;
+    padding: 15px;
+    font-size: 1rem;
+    color: #BDD4F2
+}
+
+footer {
+    font-size: 1rem;
+	color: whitesmoke;
+    padding: 1rem;
+	text-align: center;
+    margin: 0 auto;
+}
+
+.contact{
+	display: flex;
+	flex-flow: row wrap;
+	background-color: whitesmoke;
+	box-shadow: 0 0 30px #777;
+	padding: 10px;
+ }
+ 
+ .contact h3 {
+  color: #4F6F8C;
+  font-size: 1.5rem;
+  margin: 10px;
+}
+	
+
+ .contact p{
+	display: flex;
+	color: #4F6F8C;
+	font-size: 1.3rem;
+	line-height: 1.5rem;
+	margin: 20px;
+		
+} 
+
+ .map img {
+	display: flex;
+	max-width: 90%;
+	margin: 0 auto;
+	box-shadow: 0 0 10px #777;
+		   
+	} 
+		
+.social{
+	margin: 0 auto;
+	padding: .5rem;
+		
+}
+

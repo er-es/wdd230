@@ -16,7 +16,8 @@
 
     <script defer src="js/getDates.js"></script>
     <script defer src="js/hambmenu.js"></script>
-    <script src="js/pancakesBanner.js"></script>
+    <script defer src="js/pancakesBanner.js"></script>
+    <script defer src="js/windchill.js"></script>
 
 </head>
 
@@ -24,7 +25,7 @@
     
 
 <body>
-
+    
     <aside id="pancakes">
         <h4> Saturday = Preston Pancakes in the Park! 🥞 9:00 a.m. Saturday at the city park Pavilion.</h4>
     </aside>
@@ -55,17 +56,30 @@
         <h2>Preston Idaho</h2>
         <div class="herodiv">
             <div class="hero-ph">
-                <img src="images/hero_image.png" alt="Preston Lake">
+
+                <picture>
+                    <source srcset="images/hero_image_lesson6_960.jpg" media="(min-width:37.5em) and (max-width:59.9em)">
+
+                    <source srcset="images/hero_image_lesson6_1280.jpg" media="(min-width:60em)">
+
+                    <img src="images/hero_image_lesson6_640.jpg" alt="Blue Sky"> 
             </div>
+
             <section class="weathersummary">
                 <h3>Weather Summary</h3>
-                <p>Currently: Partly Cloudy</p>
-                <p>High: 48°F</p>
-                <p>Wind Chill: °F</p>
-                <p>Humidity: 51%</p>
-                <p>Wind Speed: 9 mph</p>
-                
+
+                <div>Currently:</div>
+                 <div class="currently">Partly Cloud</div>
+                <div>High:</div> 
+                <div><span class="temperature">48</span> ºF</div>
+                <div>Wind Chill:</div>
+                <div><span class="windchill"></span> ºF</div>
+                <div>Humidity:</div>
+                <div><span class="humidity">51</span>%</div>
+                <div>Wind Speed:</div>
+                <div><span class="windspeed">9</span> mph</div>
             </section>
+
         </div>
 
         <h2>5 Day Forecast</h2>

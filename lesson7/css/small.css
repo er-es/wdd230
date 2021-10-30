@@ -1,14 +1,12 @@
 
 body {
-	max-width: 100%;
-    background-color:#BDD4F2;
+	min-width: 26em;
+	background-color:#BDD4F2;
 	padding: 0;
 	margin: 0;
     font-size: 18px;
     font-family: 'Ubuntu', sans-serif;
     margin: 0 auto;
-    
-    
 }
 
 .pancakes {
@@ -31,6 +29,27 @@ footer{
 	align-items:center;
 	justify-content:center;
     
+}
+
+#container{
+	display: grid;
+	grid-template-columns: 1fr;
+    margin: 0;
+	padding: .2rem;
+	max-width: 100%;
+}
+
+.gallery {
+	filter: blur(0em);
+    transition: filter 0.5s;
+    }
+
+.caption {
+	display: none;
+}
+
+figure img {
+	min-width: 400px;
 }
 
 
@@ -208,7 +227,7 @@ nav ul li a {
 }
 
 .navigation li:first-child {
-	display: flex;
+	display: block;
     color: #BDD4F2;
     font-size: 1.5rem;
     align-items: center;
@@ -272,6 +291,8 @@ main {
     font-size: 1rem;
     color: #BDD4F2
 }
+
+
 
 footer {
     font-size: 1rem;

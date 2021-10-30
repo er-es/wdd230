@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>COLD FUN | Preston</title>
+    <meta
+      name="description"
+      content="Cold Fun is the place for all the winter lovers. We have the most recent information about events and relevant news on this magical season of the year."
+    />
+
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="css/small.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oxygen&family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="images/favicon.ico" />
+
+    <script defer src="js/windchill.js"></script>
+    <script defer src="js/script.js"></script>
+  </head>
+
+  <body>
+    <div>
+      <p class="pancakes">
+        Saturday = Preston Pancakes in the Park! 🥞 9:00 a.m. Saturday at the
+        city park Pavilion.
+      </p>
+    </div>
+
+    <header>
+      <picture>
+        <img src="images/coldfun_headerimg.png" alt="Cold Fun Logo" />
+      </picture>
+      <section class="headings">
+        <h1>COLD FUN</h1>
+        <q class="m">Winter time, fun time!</q>
+      </section>
+    </header>
+
+    <nav>
+      <ul class="navigation responsive">
+        <li><a href="#" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="#">Storm Center</a></li>
+        <li><a href="#" class="active">Gallery</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <h2>Weather Gallery</h2>
+
+      <div id="container">
+        <figure>
+          <img
+            src="images/placeholder.jpg"
+            data-src="images/weather.png"
+            class="gallery"
+          />
+          <figcaption class="caption">Foggy day in the lake</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="images/placeholder.jpg"
+            data-src="images/weather-1.png"
+            class="gallery"
+          />
+          <figcaption class="caption">Storm on the road</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="images/placeholder.jpg"
+            data-src="images/weather-2.png"
+            class="gallery"
+          />
+          <figcaption class="caption">Snowy mountains</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="images/placeholder.jpg"
+            data-src="images/weather-3.png"
+            class="gallery"
+          />
+          <figcaption class="caption">Big lighting night</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="images/placeholder.jpg"
+            data-src="images/weather-4.png"
+            class="gallery"
+          />
+          <figcaption class="caption">Rainbow on the mountains</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="images/placeholder.jpg"
+            data-src="images/weather-6.png"
+            class="gallery"
+          />
+          <figcaption class="caption">Fall clouds</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="images/placeholder.jpg"
+            data-src="images/weather-7.png"
+            class="gallery"
+          />
+          <figcaption class="caption">Calm in the lake</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="images/placeholder.jpg"
+            data-src="images/weather-8.png"
+            class="gallery"
+          />
+          <figcaption class="caption">Cloudy day</figcaption>
+        </figure>
+
+        <figure>
+          <img
+            src="images/placeholder.jpg"
+            data-src="images/weather-9.png"
+            class="gallery"
+          />
+          <figcaption class="caption">Big storm on the fields</figcaption>
+        </figure>
+      </div>
+
+      <div class="contact">
+        <h2>Contact Information</h2>
+
+        <h3>Directions:</h3>
+
+        <p>
+          Cold Fun <br />
+          1215 N 800 E, <br />
+          Preston, ID 83263 <br />
+          <br />
+          ✉️ coldfun.info@gmail.com <br />
+          ☎️ 999-999-999
+        </p>
+
+        <div class="map">
+          <a href="https://goo.gl/maps/ZUFoc6vjmpWWp4uC7 ">
+            <img src="images/preston_map.png" alt="Preston Map"
+          /></a>
+        </div>
+
+        <section class="social">
+          <a href="https://www.facebook.com">
+            <img src="images/facebook.png" alt="Facebook" width="50"
+          /></a>
+          <a href="https://www.instagram.com"
+            ><img src="images/instagram.png" alt="Instagram" width="50"
+          /></a>
+          <a href="https://www.twitter.com"
+            ><img src="images/twitter.png" alt="YouTube" width="50"
+          /></a>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      | &copy; <span id="copyrightyear"></span> | Cold Fun | Idaho | <br />
+
+      <span id="date"></span>
+    </footer>
+  </body>
+</html>

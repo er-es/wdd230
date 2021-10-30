@@ -70,9 +70,9 @@ header img {
 }
 
 .m {
-	font-style: italic;
+	font-weight: bold;
     letter-spacing: 1pt;
-	color: rgb(202, 231, 250);
+	color: rgb(54, 8, 33);
 	margin-left: 20px;
 }
 

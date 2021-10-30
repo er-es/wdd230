@@ -74,6 +74,7 @@ figure img:hover {
 }
 
 .caption {
+	display:block;
 	text-align: center;
 	color:#401D36;
 	font-size: 1.5rem;

@@ -1,114 +1,98 @@
 @media only screen and (min-width: 60em) {
-body {
-	max-width: 100%;
-}
-	
-header img {
-	max-width: 100%;
-	
-}
+  body {
+    max-width: 100%;
+  }
 
-.navigation {
-	display: flex;
-}
+  header img {
+    max-width: 100%;
+  }
 
-.navigation li {
-	display: block; 
-	flex: 1 1 auto;
-}
+  .navigation {
+    display: flex;
+  }
 
-.navigation a {
-	text-align: center;
-}
+  .navigation li {
+    display: block;
+    flex: 1 1 auto;
+  }
 
-.navigation li:first-child {
-	display: none;
-}
-	
-nav {
-	max-width: 100%;
-	display: block; 
-	flex: 1 1 auto;
-	margin: 0 auto;
-}
-	
-h1 {
-	font-size: 5em;
-}
+  .navigation a {
+    text-align: center;
+  }
 
-.hero-ph img {
-	display: flex;
-	margin: 0 auto;
-	max-width: 100%;
-}
+  .navigation li:first-child {
+    display: none;
+  }
 
-.herodiv {
-	max-width: 80%;
-	height: auto;
-	
-}
+  nav {
+    max-width: 100%;
+    display: block;
+    flex: 1 1 auto;
+    margin: 0 auto;
+  }
 
-.weathersummary {
-	top: 100px;
-	left: 100px;
-	padding: 1.5rem;
-}
+  h1 {
+    font-size: 5em;
+  }
 
-.weathersummary h2 {
-	font-size: 2.5rem;
-}
+  .hero-ph img {
+    display: flex;
+    margin: 0 auto;
+    max-width: 100%;
+  }
 
-.data {
-	font-size: 16px;
-}
-	
-#container {
-	margin: 0 auto;
+  .herodiv {
+    max-width: 80%;
+    height: auto;
+  }
+
+  .weathersummary {
+    top: 100px;
+    left: 100px;
+    padding: 1.5rem;
+  }
+
+  .weathersummary h2 {
+    font-size: 2.5rem;
+  }
+
+  .data {
+    font-size: 16px;
+  }
+
+  #container{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	max-width: 100%;
-}	
+	padding: 20px;
 
-figure img:hover {
-	box-shadow: 0 0 50px #333;
+  .contact {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 60px 60px 90px 90px;
+  }
+
+  .contact h2 {
+    grid-column: 2/3;
+    grid-row: 1/1;
+  }
+  .contact h3 {
+    grid-column: 2/3;
+    grid-row: 2/2;
+  }
+
+  .contact p {
+    grid-column: 2/3;
+    grid-row: 3/3;
+  }
+
+  .map img {
+    grid-column: 1/2;
+    max-width: 80%;
+  }
+
+  .social {
+    grid-column: 2/3;
+    grid-row: 5/5;
+    margin: 0 auto;
+  }
 }
-
-.caption {
-	display:block;
-	text-align: center;
-	color:#401D36;
-	font-size: 1.5rem;
-	font-weight: bold;
-}
-
-.contact {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 60px 60px 90px 90px;
-}
-
-.contact h2 {
-	grid-column: 2;
-	grid-row: 1/1;
-}
-.contact h3 {
-	grid-column: 2;
-	grid-row:2/2;
-}
-
-.contact p{
-	grid-column:2;
-	grid-row:3/3;
-} 
-
- .map img {
-	grid-column: 1;	
-	margin: 10px auto;	   
-	} 
-
-.social {
-	grid-column: 2;
-	grid-row: 5/5;
-	margin: 0 auto;
-}
-}	

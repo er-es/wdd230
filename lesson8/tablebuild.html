@@ -6,14 +6,16 @@
     , initial-scale=1.0">
     <title>Data Table Activity</title>
     <meta name="description" content="Building and styling a simple data table ">
-  
+
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap">
     <link rel="stylesheet" href="css/tablebuild.css">
 </head>
 <body>
     <table>
         <thead>
             <tr>
-                <th id= "header" colspan="3">ACME Wildwest</th>
+                <th scope= "header" colspan="3">ACME Wildwest</th>
             </tr>
         </thead>  
         
@@ -47,7 +49,7 @@
                 <td id="colorrow">$7,500</td>
             </tr>
             <tr>
-                <td id="blackfriday">Black Friday</td>
+                <td><i>Black Friday</i></td>
                 <td colspan="2">$3,200</td>
                 
             </tr>

@@ -21,7 +21,7 @@ const banner = document.querySelector(".pancakes");
 const days = new Date();
 
 if (days.getDay() == 5) {
-  saturdayBanner.style.display = "block";
+  banner.style.display = "block";
 } else {
   banner.style.display = "none";
 }

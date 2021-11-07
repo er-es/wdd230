@@ -11,9 +11,7 @@ const fulldate = new Intl.DateTimeFormat("en-UK", { dateStyle: "full" }).format(
 
 //Hamburger menu
 function toggleMenu() {
-  document
-    .getElementsByClassName("navigation")[0]
-    .classList.toggle("responsive");
+  document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
 }
 
 //Pancakes banner aside

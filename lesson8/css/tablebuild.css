@@ -12,7 +12,7 @@ tfoot {
   background-color: #7fb9c2;
 }
 
-thead {
+thead tr:nth-child(1) {
   font-size: 2rem;
 }
 
@@ -20,7 +20,7 @@ tbody {
   font-size: 1.2rem;
 }
 
-tbody tr:first-child,
+tbody tr:first-child(2),
 #colorrow {
   background-color: #628ca6;
   font-size: 1.2rem;
@@ -41,7 +41,7 @@ tbody tr:nth-child(even) {
   background-color: #e7f0ed;
 }
 
-tbody tr:nth-child(odd) :not() {
+tbody tr:nth-child(odd) {
   background-color: #e7ffed;
 }
 

@@ -20,7 +20,7 @@ tbody {
   font-size: 1.2rem;
 }
 
-tbody tr:first-child(2),
+thead tr:nth-child(2),
 #colorrow {
   background-color: #628ca6;
   font-size: 1.2rem;

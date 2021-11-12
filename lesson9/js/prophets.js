@@ -25,7 +25,7 @@ fetch(requestURL)
         birthDate.textContent = `Date of Birth: ${prophet.birthdate}`;
         birthPlace.textContent =`Place of Birth: ${prophet.birthplace}`;
         image.setAttribute('src', prophet.imageurl);
-        image.setAttribute('alt', `${fullname} - ${prophet.length}`);
+        image.setAttribute('alt', `${fullname} - ${prophet.order}`);
 
      
         card.appendChild(h2);

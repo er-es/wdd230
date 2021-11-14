@@ -24,7 +24,7 @@ header img {
   flex-direction: column;
 }
 
-.headings h1 {
+h1 {
   font-size: 2.5rem;
   margin: 0 0 0 17px;
   color: rgb(202, 231, 250);
@@ -47,12 +47,12 @@ max-width: 100%;
  padding-top: 5px;
 }
 
-.hero-text {
+.hero-text h2{
   text-align: center;
   position: absolute;
-  font-size: 1.2rem;
-  top: 40%;
-  left: 55%;
+  font-size: 2rem;
+  top: 35%;
+  left: 60%;
   color: white;
   text-shadow: 4px 4px 5px #4f6f8c;
 }
@@ -143,7 +143,7 @@ img{
 
 }
 
-.enjoy, .events {
+div.enjoy, div.events{
   color: #401d36;
   font-size: 1.5rem;
   text-align: center;

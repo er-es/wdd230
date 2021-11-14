@@ -1,0 +1,68 @@
+@media only screen and (min-width: 60em) {
+body {
+	max-width: 100%;
+}
+	
+section {
+	box-shadow: 0 0 50px #777;
+}
+
+
+.towns {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 1px; 
+}
+
+.events {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.events img {
+	grid-column: 1/2;
+	max-width: 100%;
+	padding: 20px;
+	margin-bottom: 5%;
+}
+.events p {
+ font-size: 2rem;
+ padding: 5%;
+ 
+}
+
+nav .mainMenu {
+  display: flex;
+  
+}
+
+nav .mainMenu li a{
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 2rem;
+  }
+
+nav.clickMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+
+nav .mainMenu .closeMenu .icons {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+
+.hero-text {
+	font-size: 3.5rem;
+	top: 50%;
+	left: 65%;
+ }
+
+
+}
+

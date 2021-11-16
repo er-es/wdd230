@@ -2,11 +2,34 @@
 body {
 	max-width: 100%;
 }
+
+.navigation {
+	display: flex;
+}
+
+.navigation li {
+	display: block; 
+	flex: 1 1 auto;
+}
+
+.navigation a {
+	text-align: center;
+}
+
+.navigation li:first-child {
+	display: none;
+}
 	
+nav {
+	max-width: 100%;
+	display: block; 
+	flex: 1 1 auto;
+	margin: o auto;
+}
+
 section {
 	box-shadow: 0 0 50px #777;
 }
-
 
 .towns {
 	display: grid;
@@ -29,32 +52,6 @@ section {
  font-size: 2rem;
  padding: 5%;
  
-}
-
-nav .mainMenu {
-  display: flex;
-  
-}
-
-nav .mainMenu li a{
-  display: inline-block;
-  padding: 15px;
-  text-decoration: none;
-  color: #fff;
-  font-size: 2rem;
-  }
-
-nav.clickMenu {
-  font-size: 2rem;
-  margin: 20px;
-  display: none;
-  cursor: pointer;
-}
-
-nav .mainMenu .closeMenu .icons {
-  font-size: 2rem;
-  display: none;
-  cursor: pointer;
 }
 
 .hero-text h2{

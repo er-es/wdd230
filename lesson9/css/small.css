@@ -6,7 +6,6 @@ body {
   font-family: "Ubuntu", sans-serif;
 }
 
-
 header {
   max-width: 100%;
   background-color: #4f6f8c;
@@ -36,6 +35,70 @@ h1 {
   margin-left: 20px;
 }
 
+nav {
+  display: flex;
+  margin: 0 auto;
+  max-width: 100%;
+  text-align: left;
+  padding: 1rem;
+  align-items: left;
+  justify-content: left;
+  background-color: #401D36;
+  
+}
+
+nav ul {
+list-style-type: none;
+padding: 0;
+overflow: hidden;
+}
+
+nav ul li a {
+display: block;
+color:  #BDD4F2;
+text-align: left;
+padding: 1rem;
+text-decoration: none;
+font-size: 1.5rem;
+}
+
+.active {
+color: whitesmoke;
+}
+
+.responsive li {
+display: block;
+}
+
+.navigation {
+list-style: none;
+padding: 0;
+  
+}
+
+.navigation li:first-child {
+  display: flex;
+  color: #BDD4F2;
+  font-size: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.navigation li {
+display: none;
+}
+
+.navigation a {
+display: block;
+padding: 0.75rem;
+text-align: left;
+text-decoration: none;
+
+}
+.navigation a:hover {
+color: whitesmoke;
+}
 .hero-div {
 max-width: 100%;
 }
@@ -51,45 +114,13 @@ max-width: 100%;
   text-align: center;
   position: absolute;
   font-size: 2rem;
-  top: 35%;
+  top: 50%;
   left: 60%;
   color: white;
   text-shadow: 4px 4px 5px #4f6f8c;
 }
 
-nav {
-  background-color: #401d36;
-  color: #fff;
-  display: flex;
-  justify-content: space-between;
-}
 
-nav .mainMenu {
-  height: 50vh;
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 10;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: #401d36;
-  list-style: none;
-  
-}
-
-nav .mainMenu .closeMenu {
-  display: block;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
-
-nav .clickMenu {
-  display: block;
-}
 
 section   {
   max-width: 100%;

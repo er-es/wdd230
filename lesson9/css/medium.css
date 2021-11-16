@@ -11,4 +11,37 @@
         border-radius: 10px;
         }
     
+    .towns section {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+      
+    .towns section:nth-child(even) img {
+            grid-row: 1/4;
+            grid-column: 1/2;
+        }
+
+    .towns section:nth-child(even) h2,
+    .towns section:nth-child(even) h3,
+    .towns section:nth-child(even) h4 {
+          grid-auto-rows: min-content;
+          grid-column: 2/3;
+        
+     }
+
+     .towns section:nth-child(odd) img {
+        grid-row: 1/4;
+        grid-column: 2/3;
+    }
+
+        
+
+
+    .towns section:nth-child(odd) h2,
+    .towns section:nth-child(odd) h3,
+    .towns section:nth-child(odd) h4 {
+          grid-auto-rows: min-content;
+          grid-column: 1/2;
+        
+     }
     }

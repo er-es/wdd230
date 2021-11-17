@@ -10,11 +10,10 @@ const fulldate = new Intl.DateTimeFormat("en-UK", { dateStyle: "full" }).format(
 );
 
 //Hamburger menu
-function toggleMenu() {
-  document
-    .getElementsByClassName("navigation")[0]
-    .classList.toggle("responsive");
-}
+function toggleMenu(){
+  document.getElementsByClassName('responsive')[0].classList.toggle('navigation');
+ }
+
 
 //Pancakes banner aside
 const banner = document.querySelector(".pancakes");

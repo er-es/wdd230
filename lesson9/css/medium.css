@@ -1,47 +1,47 @@
 /*Media query section */
 @media (min-width: 37.5em) {
+  body {
+    max-width: 100%;
+  }
 
-    body {
-        max-width: 100%;
-    }
+  header img {
+    float: right;
+    width: 100px;
+    border-radius: 10px;
+  }
 
-    header img {
-        float: right;
-        width: 100px;
-        border-radius: 10px;
-        }
-    
-    .towns section {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-        }
-      
-    .towns section:nth-child(even) img {
-            grid-row: 1/4;
-            grid-column: 1/2;
-        }
+  .towns section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 
-    .towns section:nth-child(even) h2,
-    .towns section:nth-child(even) h3,
-    .towns section:nth-child(even) h4 {
-          grid-auto-rows: min-content;
-          grid-column: 2/3;
-        
-     }
+  .towns section:nth-child(even) img {
+    grid-row: 1/4;
+    grid-column: 1/2;
+  }
 
-     .towns section:nth-child(odd) img {
-        grid-row: 1/4;
-        grid-column: 2/3;
-    }
+  .towns section:nth-child(even) h2,
+  .towns section:nth-child(even) h3,
+  .towns section:nth-child(even) h4 {
+    grid-auto-rows: min-content;
+    grid-column: 2/3;
+  }
 
-        
+  .towns section:nth-child(odd) img {
+    grid-row: 1/4;
+    grid-column: 2/3;
+  }
 
+  .towns section:nth-child(odd) h2,
+  .towns section:nth-child(odd) h3,
+  .towns section:nth-child(odd) h4 {
+    grid-auto-rows: min-content;
+    grid-column: 1/2;
+  }
 
-    .towns section:nth-child(odd) h2,
-    .towns section:nth-child(odd) h3,
-    .towns section:nth-child(odd) h4 {
-          grid-auto-rows: min-content;
-          grid-column: 1/2;
-        
-     }
-    }
+  .events {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-auto-rows: min-content;
+}
+}

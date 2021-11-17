@@ -41,7 +41,7 @@ nav {
   max-width: 100%;
   text-align: left;
   padding: 1rem;
-  align-items: left;
+  align-items:flex-end;
   justify-content: left;
   background-color: #401D36;
   

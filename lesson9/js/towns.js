@@ -17,33 +17,37 @@ fetch(requestURL)
    
     townSelection.forEach(town=> { 
         const card = document.createElement('section');
-        const name = document.createElement('h2');
-        const motto = document.createElement('h3');
-        const yearFounded = document.createElement('h4');
-        const currentPopulation = document.createElement('h4');
-        const averageRainfall = document.createElement('h4');
+        card.classList.add('placeholder');
+        const h2 = document.createElement('h2');
         const photo = document.createElement('img');
-
-
-
-        name.textContent = town.name;
-        motto.textContent = town.motto;
-        yearFounded.textContent =`Year Founded: ${town.yearFounded}`;
-        currentPopulation.textContent =`Population: ${town.currentPopulation}`;
-        averageRainfall.textContent =`Annual Rain Fall: ${town.averageRainfall}`;
+        const motto = document.createElement('h3');
+        motto.classList.add('motto');
+        const info = document.createElement('div');
+        info.classList.add('towninfo');
+        const founded = document.createElement('p');
+        const population = document.createElement('p');
+        const rainfall = document.createElement('p');
+              
+        h2.textContent = town.name;
+        founded.textContent = `Year Founded: ${town.yearFounded}`;
+        population.textContent = `Population: ${town.currentPopulation}`;
+        rainfall.textContent = `Annual Rain Fall: ${town.averageRainfall}`;
         photo.setAttribute('src', `images/${town.photo}`);
-        
-        card.appendChild(name);
-        card.appendChild(motto);
-        card.appendChild(yearFounded);
-        card.appendChild(currentPopulation);
-        card.appendChild(averageRainfall);
+        photo.setAttribute('alt', `weather in ${town.name}`);
+        motto.textContent = town.motto;
+       
+      
+        card.appendChild(h2);
         card.appendChild(photo);
+        card.appendChild(motto);
+        info.appendChild(founded);
+        info.appendChild(population);
+        info.appendChild(rainfall);
+        
+      
+        document.querySelector('div.towns').appendChild(card, info);
+      })
+    });
 
-      document.querySelector('div.towns').appendChild(card);
-            
-    })
-  });
 
         
- 

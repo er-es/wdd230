@@ -8,11 +8,6 @@ copyrightyear.textContent = new Date().getFullYear();
 const today = new Date();
 const fulldate = new Intl.DateTimeFormat("en-UK", { dateStyle: "full" }).format(today);
 
-//Hamburger menu
-function toggleMenu() {
-    document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
-}
-
 //Pancakes banner aside
 const days = new Date();
     if(days.getDate() == 5) {

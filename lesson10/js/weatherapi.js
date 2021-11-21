@@ -1,36 +1,30 @@
 
-const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=a682a4d8efb27d168b538433ff7508e5";
+const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&units=imperial&appid=a682a4d8efb27d168b538433ff7508e5";
 
 fetch(apiURL)
   .then((response) => response.json())
-  .then((prestonData) => {
+  .then((jsObject) => {
     
-//console.log(prestonData); for temporary checking for valid response and data parsing
+    console.log(jsObject); 
 
-    const temp = Math.floor(convertTemp(prestonData)) 
-    const icon = 'https://openweathermap.org/img/w/' + prestonData.weather[0]['icon'] + '.png'
-  display(temp, icon)
-}); 
+    const currentTemp = document.querySelector('#current-temp');
+    const weathericon = document.querySelector('#icon');
 
-function convertTemp(prestonData){
-  return (prestonData.main.temp - 273.15) * 9/5 + 32
-}
+    currentTemp.textContent = jsObject.main.temp;
+    let imgsrc = `https://openweathermap.org/img/w/${jsObject.weather[0].icon}.png`;
+    let imgalt = jsObject.weather[0].description;
 
-function display(temp, icon){
-  const tempSelector = document.querySelector('#current-temp')
-  tempSelector.textContent = temp
+    currentTemp.textContent = jsObject.main.temp;
+    weathericon.setAttribute('src', imgsrc);
+    weathericon.setAttribute('alt', imgalt);
 
-  const linkSelector = document.querySelector('#imagesrc')
-  linkSelector.textContent = icon
-  const imgSelector = document.querySelector('#icon')
-  imgSelector.setAttribute('src', icon)
-  imgSelector.setAttribute('alt', 'Descriptive weather icon')
-}
+  });
 
 
 
+
+   
  
-
 
 
 

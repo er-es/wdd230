@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLD FUN | Preston</title>
+    <meta name="description" content="Cold Fun is the place for all the winter lovers. We have the most recent information about events and relevant news on this magical season of the year.">
+   
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
+
+    
+    <script defer src="js/windchill.js"></script>
+    <script defer src="js/script.js"></script>
+
+</head>
+
+    
+    
+
+<body>
+    <div>
+        <p class="pancakes">
+           Saturday = Preston Pancakes in the Park! 🥞 9:00 a.m. Saturday at the city park Pavilion.
+        </p>
+
+    </div>
+
+    <header>
+    <picture>
+            <img src="images/coldfun_headerimg.png" alt="Cold Fun Logo">
+        </picture>
+        <section class="headings">
+            <h1>COLD FUN</h1>
+            <q class="m">Winter time, fun time!</q>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="navigation responsive">
+            <li><a href="#" onclick="toggleMenu()">&#9776;</a>Menu</li>
+            <li><a href="../lesson11/index.html">Home</a></li>
+            <li><a href="../lesson11/preston.html" class="active">Preston</a></li>
+            <li><a href="../lesson11/sodasprings.html">Soda Springs</a></li>
+            <li><a href="../lesson11/fishhaven.html">Fish Haven</a></li>
+            <li><a href="../lesson11/stormcenter.html">Storm Center</a></li>
+            <li><a href="../lesson11/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h2>Preston Idaho</h2>
+        <div class="herodiv">
+            <div class="hero-ph">
+
+                <picture>
+                   <img src="images/preston_hero_1200.png" alt="Blue Sky"> 
+                     <source
+                     srcset="images/ship800.webp"
+                     media="(min-width:30em) and (max-width:59.9em)">
+                     <source
+                     srcset="images/ship1200.webp"
+                     media="(min-width:60em)">
+            </div>
+
+            <section class="weathersummary">
+                <h3>Weather Summary</h3>
+
+                <div>Currently:</div>
+                 <div class="currently"></div>
+                <div>High:</div> 
+                <div><span class="temperature"></span> ºF</div>
+                <div>Wind Chill:</div>
+                <div><span class="windchill"></span> ºF</div>
+                <div>Humidity:</div>
+                <div><span class="humidity"></span>%</div>
+                <div>Wind Speed:</div>
+                <div><span class="windspeed"></span> mph</div>
+            </section>
+
+        </div>
+
+        <div class="forecast">
+
+            <h2>5 Day Forecast</h2>
+            <table>
+                <tr>
+                    <th id="dayofweek1"></th>
+                    <th id="dayofweek2"></th>
+                    <th id="dayofweek3"></th>
+                    <th id="dayofweek4"></th>
+                    <th id="dayofweek5"></th>
+                </tr>
+                <tr>
+                    <td><img id="icon1"><br><span id="day1"></span>ºF</td>
+                    <td><img id="icon2"><br><span id="day2"></span>ºF</td>
+                    <td><img id="icon3"><br><span id="day3"></span>ºF</td>
+                    <td><img id="icon4"><br><span id="day4"></span>ºF</td>
+                    <td><img id="icon5"><br><span id="day5"></span>ºF</td>
+                </tr>
+            </table>
+        </div>
+        
+    <div class="article">
+        <h2>Use layers to stay warm</h2>
+
+        <img src="images/clothes-mini.jpg" alt="Dress in Layers">
+            <p>To enjoy your favourite activities without fear of getting too cold or too hot, layering is the way to go! Layering is a system of clothing items that you can put on, or take off, depending on your level of activity, to help regulate body temperature. The layering system includes: a base layer, a mid layer, and a good outer layer that are more effective and versatile than one big winter jacket and snowpants. You can either layer and enhance your different layers if the cold gets too intense, or remove it one by one if you get too hot.
+
+                Layering is also useful in all types of weather. No need to buy a new jacket with each change of season. For example, fall afternoons are relatively warm while evenings are cooler. It’s easier to start the day wearing layers and remove them as your body warms up than to do the opposite. And this rule applies just as much in the fall as it does in the winter or spring.
+                
+                As layering clothes will help you regulate your body temperature, depending on the intensity of the activity you want to do, a high-intensity activity where you’re likely to sweat a lot, such as trail running, will require fewer layers of clothing than if you’re standing still by a campfire.</p>
+          
+            <h3> How to layer:</h3>
+
+            <p> To understand layering your clothing for outdoor activities, you need to know the function of each layer:</p>
+            
+            <p><b>Base layer (underwear layer):</b> The base layer is the foundation for your layering system. The base layers’ main responsibility is wicking moisture away from your skin which helps regulate temperature and keep you comfortable. Generally made from merino wool or fleece, your base layer should be quick-drying, absorb humidity, and be able to wick moisture. Your underwear is a base layer, too. Don’t underestimate it, because it also factors into the equation. So, pay attention to what you’re wearing underneath your clothes.</p>
+            <p><b>Middle layer (insulating layer):</b> The warmth you get from your base layer is not enough in colder temperatures. To trap body heat even more effectively, layering clothes with a middle layer is a must. The insulating layer is one you will find being put on and taken off the most frequently of all layering pieces. Made of synthetic fibre and down, this layer will keep you warmer when the temperature drops.</p>
+            <p><b>Outer layer (shell layer):</b> When layering clothes, the role of the outer layer, also known as the hard shell, is to protect you from the elements, keeping you dry from precipitation, and blocking the wind. It must be lightweight, compressible, breathable and wear-resistant for long-term protection. Its internal seams must also be sealed to prevent water from seeping in. </p>
+            
+            <p>Even if you don’t wear all three layers at the outset, it’s a good idea to take all layers on every outing because you can peel off layers if things heat up, but you can’t put on layers that you didn’t bring along. </p>
+        
+
+    </div>
+       
+    <div class="contact">
+        <h2>Contact Information</h2>
+      
+        <h3>Directions:</h3>
+
+
+        <p>
+        Cold Fun <br>
+        1215 N 800 E, <br>
+        Preston, ID 83263 <br> <br>
+        ✉️ coldfun.info@gmail.com <br>
+        ☎️ 999-999-999 </p>
+
+
+        <div class= "map">
+            <a href= "https://goo.gl/maps/ZUFoc6vjmpWWp4uC7 "> <img src="images/preston_map.png" alt="Preston Map"></a>
+            </div>
+
+        <section class="social">
+            <a href="https://www.facebook.com"> <img src="images/facebook.png" alt="Facebook" width="50"></a>
+            <a href="https://www.instagram.com"><img src="images/instagram.png" alt="Instagram" width="50"></a>
+            <a href="https://www.twitter.com"><img src="images/twitter.png" alt="YouTube" width="50"></a>
+        </section>
+        
+        </div>  
+
+
+   
+    </main>
+   
+    <footer>
+       | &copy; <span id="copyrightyear"></span>
+       | Cold Fun | Idaho | <br> 
+
+       <span id= "date"></span>
+    </footer>
+
+   
+     
+</body>
+</html>
+© 2021 GitHub, Inc.
+Terms
+Privacy

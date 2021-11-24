@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COLD FUN | Storm Center</title>
+    <meta name="description" content=" Help us to report a storm or unusual weather event in your travel area. ">
+   
+    <link rel="stylesheet" href="../css/normalize.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    
+    <script defer src="js/script.js"></script>
+
+</head>
+
+<body>
+    
+    <header>
+    <picture>
+            <img src="images/coldfun_headerimg.png" alt="Cold Fun Logo">
+        </picture>
+        <section class="headings">
+            <h1>COLD FUN</h1>
+            <q class="m">Winter time, fun time!</q>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="navigation responsive">
+            <li><a href="#" onclick="toggleMenu()">&#9776;</a>Menu</li>
+            <li><a href="../lesson11/index.html">Home</a></li>
+            <li><a href="../lesson11/preston.html">Preston</a></li>
+            <li><a href="../lesson11/sodasprings.html">Soda Springs</a></li>
+            <li><a href="../lesson11/fishhaven.html">Fish Haven</a></li>
+            <li><a href="../lesson11/stormcenter.html" class="active">Storm Center</a></li>
+            <li><a href="../lesson11/gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+<h2>Report a Storm</h2>
+<form method="get" action="thanks.html" target="_blank">
+    <fieldset>
+        <legend> Personal Information</legend>
+
+       <label class="top">Full Name* <input type="text" pattern="[a-zA-Z]{5,15}" name="fullname" required></label>
+       <label class="top">Email <input type="email" name="email" placeholder="someone@gmail.com"></label>
+       <label class="top">Phone Number <input type="tel" name="phone" placeholder="1235551234" required></label>
+       <label class="top">Zip code *<input type="number" name="zip"  min="0" required></label>
+    </fieldset>
+
+    <fieldset>
+        <legend>Storm Information</legend>
+        <label class="stormdate">Storm Date<input type="date" name="stormdate"></label>
+       
+        <label class="stormtype">Storm Type:</label>
+
+            <input list="stormtype"  name="type"/>
+            <datalist>
+            <option value="Flash Flood">
+            <option value="Hail">
+            <option value="Hurricane">
+            <option value="Thunderstorm">
+            <option value="Tornado">
+        </datalist>
+        
+        <label class="stormseverity"> Storm Severity <input type="range" name="severity" value="5" min="1" max="10"></label>
+
+        <label class="stormregion">Storm Region <select name="region">
+            <option selected disabled value="">Select Region...</option>
+            <option value="preston">Preston</option>
+            <option value="sodasprings">Soda Springs</option>
+            <option value="fishhaven">Fish Haven</option>
+        </select>
+    </label>
+
+    
+        <label class="dangerlevel">Are you in Danger?</label>
+        <label class="level"><input type="radio" name="danger" value="yes">  Yes</label>
+        <label class="level"><input type="radio" name="danger" value="maybe">  Maybe</label>
+        <label class="level"><input type="radio" name="danger" value="no">  No</label>
+    
+
+    <label class="comments">Aditional Information | Comments<textarea name="information"></textarea></label>
+    
+    </fieldset>
+
+    <input type="submit" value="Report Storm" class="submitBtn">
+</form>
+
+    <div class="contact">
+        <h2>Contact Information</h2>
+      
+        <h3>Directions:</h3>
+
+
+        <p>
+        Cold Fun <br>
+        1215 N 800 E, <br>
+        Preston, ID 83263 <br> <br>
+        ✉️ coldfun.info@gmail.com <br>
+        ☎️ 999-999-999 </p>
+
+
+        <div class= "map">
+            <a href= "https://goo.gl/maps/ZUFoc6vjmpWWp4uC7 "> <img src="images/preston_map.png" alt="Preston Map"></a>
+            </div>
+
+        <section class="social">
+            <a href="https://www.facebook.com"> <img src="images/facebook.png" alt="Facebook" width="50"></a>
+            <a href="https://www.instagram.com"><img src="images/instagram.png" alt="Instagram" width="50"></a>
+            <a href="https://www.twitter.com"><img src="images/twitter.png" alt="YouTube" width="50"></a>
+        </section>
+        
+        </div>  
+
+
+   
+    </main>
+   
+    <footer>
+       | &copy; <span id="copyrightyear"></span>
+       | Cold Fun | Idaho | <br> 
+
+       <span id= "date"></span>
+    </footer>
+
+</html>

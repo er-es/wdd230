@@ -1,15 +1,17 @@
 /*Media query section */
 @media (min-width: 37.5em) {
+  body {
+    max-width: 100%;
+  }
 
-    body {
-        max-width: 100%;
-    }
+  header img {
+    float: right;
+    width: 100px;
+    border-radius: 10px;
+  }
 
-    header img {
-        float: right;
-        width: 100px;
-        border-radius: 10px;
-        }
-    }
-
-   
+  #container {
+    grid-template-columns: 1fr 1fr;
+    padding: 20px;
+  }
+}

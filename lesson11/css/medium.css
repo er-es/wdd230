@@ -14,4 +14,16 @@
     grid-template-columns: 1fr 1fr;
     padding: 20px;
   }
+ 
+
+.towns {
+display: flex;
+flex-direction: column;
+}
+
+.towns:nth-child(odd) {
+	flex-direction: column-reverse;
+}
+
+
 }

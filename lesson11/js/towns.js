@@ -1,6 +1,6 @@
-const requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
+const townsURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 
-fetch(requestURL)
+fetch(townsURL)
   .then(function (response) {
     return response.json();
   })
@@ -17,13 +17,10 @@ fetch(requestURL)
    
     townSelection.forEach(town=> { 
         const card = document.createElement('section');
-        card.classList.add('placeholder');
         const h2 = document.createElement('h2');
         const photo = document.createElement('img');
         const motto = document.createElement('h3');
-        motto.classList.add('motto');
         const info = document.createElement('div');
-        info.classList.add('towninfo');
         const founded = document.createElement('p');
         const population = document.createElement('p');
         const rainfall = document.createElement('p');
@@ -40,14 +37,12 @@ fetch(requestURL)
         card.appendChild(h2);
         card.appendChild(photo);
         card.appendChild(motto);
-        info.appendChild(founded);
-        info.appendChild(population);
-        info.appendChild(rainfall);
+        card.appendChild(founded);
+        card.appendChild(population);
+        card.appendChild(rainfall);
         
       
         document.querySelector('div.towns').appendChild(card, info);
       })
     });
 
-
-        

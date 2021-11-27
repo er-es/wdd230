@@ -10,7 +10,7 @@ let windchill = function(temperature, windspeed) {
       ));
   }
   else {
-      return '0';
+      return 'NA';
   }
 }
 

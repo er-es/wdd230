@@ -11,7 +11,8 @@
     <link rel="stylesheet" href="css/small.css">
     <link rel="stylesheet" href="css/medium.css">
     <link rel="stylesheet" href="css/large.css">
-    <link href="https://fonts.googleapis.com/css2?family=Oxygen&family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,800;1,300&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.ico">
     
     <script defer src="js/script.js"></script>
@@ -22,7 +23,7 @@
     
     <header>
     <picture>
-            <img src="images/coldfun_headerimg.png" alt="Cold Fun Logo">
+            <img src="images/cold_fun_logo2.png" alt="Cold Fun Logo">
         </picture>
         <section class="headings">
             <h1>COLD FUN</h1>
@@ -58,17 +59,17 @@
         <legend>Storm Information</legend>
         <label class="stormdate">Storm Date<input type="date" name="stormdate"></label>
        
-        <label class="stormtype">Storm Type:</label>
-
-            <input list="stormtype"  name="type"/>
-            <datalist>
-            <option value="Flash Flood">
-            <option value="Hail">
-            <option value="Hurricane">
-            <option value="Thunderstorm">
-            <option value="Tornado">
-        </datalist>
+        <label> Storm Type
+            <input type="text" name="type" list="stormtype"/> </label>
+            <datalist id="stormtype">
+            <option value="Flash Flood"></option>
+            <option value="Hail"></option>
+            <option value="Hurricane"></option>
+            <option value="Thunderstorm"></option>
+            <option value="Tornado"></option>
+          </datalist>
         
+
         <label class="stormseverity"> Storm Severity <input type="range" name="severity" value="5" min="1" max="10"></label>
 
         <label class="stormregion">Storm Region <select name="region">

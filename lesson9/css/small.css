@@ -184,6 +184,12 @@ div.enjoy, div.events{
   margin: 0 auto;  
 }
 
+eventsbox {
+  border: 5px solid green;
+  text-align: center;
+  line-height: .5em;
+}
+
 footer {
   font-size: 1rem;
   text-align: center;

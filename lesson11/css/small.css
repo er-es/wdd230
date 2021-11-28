@@ -75,7 +75,7 @@ header img {
 }
 
 .forecast {
-	max-width: 90%;
+  max-width: 90%;
 	margin: 10% auto;
 	padding: 1.5rem;
 	text-align: center;
@@ -136,6 +136,13 @@ th {
   inline-size: 400px;
   overflow-wrap: break-word;
 }
+
+box {
+  padding: 1%;
+  text-align: center;
+  line-height: .5em;
+}
+
 
 
 

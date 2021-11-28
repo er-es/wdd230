@@ -10,6 +10,8 @@
     border-radius: 10px;
   }
 
+  
+
   .towns section {
     display: grid;
     grid-template-columns: 1fr 1fr;

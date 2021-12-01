@@ -176,6 +176,7 @@ h2 {
 h3 {
   font-size: 1.5rem;
   color: #536878;
+  text-align: center;
 }
 
 p {
@@ -238,14 +239,32 @@ nav ul {
   color: whitesmoke;
 }
 
-.enjoy,
-.events h3 {
+.events-fish {
+  border: 3px solid #4f6f8c;
   font-size: 1rem;
   text-align: center;
-  background-color: #2e1225;
-  margin-top: 8%;
-}
+  background-color: #BDD4F2;
+  margin: 30%;
+  box-shadow: 0 0 50px #333;
+  }
 
+  .events-preston {
+    border: 3px solid #4f6f8c;
+    font-size: 1rem;
+    text-align: center;
+    background-color: #BDD4F2;
+    margin: 30%;
+    box-shadow: 0 0 50px #333;
+    }
+
+    .events-soda {
+      border: 3px solid #4f6f8c;
+      font-size: 1rem;
+      text-align: center;
+      background-color: #BDD4F2;
+      margin: 30%;
+      box-shadow: 0 0 50px #333;
+      }
 
 .towns {
   display: grid;
